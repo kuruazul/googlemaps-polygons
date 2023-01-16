@@ -1,0 +1,75 @@
+.list__item{
+    max-width: 100%;
+    padding: 10px 14px;
+    background-color: #c7c7c7;
+    border-radius: 8px;
+    gap: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.list__item.active {
+    outline: 2px solid #0e356e;
+}
+
+.list__item:hover{
+    background-color: #ddd;
+}
+
+.list__item-icon{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.list__item-info{
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.list__item-input{
+    max-width: 100%;
+    height: 100%;
+    font-size: 16px;
+    outline: none !important;
+    border-radius: 8px;
+    border: none !important;
+}
+
+.item-info__title{
+    width: 100%;
+    text-overflow: ellipsis;
+    display: block;
+    white-space: nowrap;
+}
+.item-info__zone-info{
+    color: #565656;
+    font-size: 12px;
+}
+
+.list__item-delete__container, .list__item-edit__container{
+    padding: 3px 20px;
+    border-radius: 8px;
+    height: 100%;
+    width: max-content;
+    display: grid;
+    background-color: #e4e4e4;
+    place-items: center;
+    cursor: pointer;
+}
+
+.list__item-delete__container:hover, .list__item-edit__container:hover{
+    background-color: #efefef;
+}
+
+.item-delete__icon{
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
